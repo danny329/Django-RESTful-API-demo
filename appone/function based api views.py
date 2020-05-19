@@ -1,4 +1,4 @@
-# rename this file to function based api views.py to use function based api
+# rename this file to function based api apiviews decorator on function based api views.py to use function based api
 
 
 #working function based api views
