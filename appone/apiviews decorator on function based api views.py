@@ -1,4 +1,4 @@
-# rename this file to apiviews decorator on function based api views.py to use api_view() in function based api view
+# rename this file to class based api view.py to use api_view() in function based api view
 # api_view() in function based api view
 
 
@@ -11,7 +11,7 @@ from rest_framework.response import Response
 
 #article list views [get,post]
 @api_view(['GET', 'POST'])
-def article_list(request):
+def article_list(request, format=None):
     if request.method=='GET':
         articles = Article.objects.all()
         serializer = ArticleSerializer(articles, many=True)
@@ -26,7 +26,7 @@ def article_list(request):
 
 # article detail views [get,put,delete]
 @api_view(['GET', 'PUT', 'DELETE'])
-def article_details(request, pk):
+def article_details(request, pk, format=None):
     try:
         article = Article.objects.get(pk=pk)
     except Article.DoesNotExist:

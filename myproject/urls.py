@@ -16,13 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
-# from appone import views
+
 
 router = routers.DefaultRouter()
-# router.register('articles', views.ArticleViewSet)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('appone.urls')),
-    #path('', include(router.urls)),
-   # path('api/', include('rest_framework.urls', namespace='rest_framework'))
+
 ]
