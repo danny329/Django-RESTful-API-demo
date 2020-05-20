@@ -1,4 +1,4 @@
-# rename this file to class based api view.py to use api_view() in function based api view
+# rename this file to views.py to use api_view() in function based api view
 # api_view() in function based api view
 
 

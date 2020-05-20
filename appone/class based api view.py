@@ -1,4 +1,4 @@
-# rename this file to   class based api view.py to use class based api view
+# rename this file to views.py to use class based api view
 # class based api view
 from .models import Article
 from .serializers import ArticleSerializer

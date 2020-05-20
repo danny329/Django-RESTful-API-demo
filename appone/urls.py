@@ -3,7 +3,7 @@ from appone import views
 from rest_framework.urlpatterns import format_suffix_patterns
 # from rest_framework import routers
 
-#working class based api views
+#working class based api views Using generic class-based views
 urlpatterns = [
 
     path('articles/', views.ArticleList.as_view()),
@@ -11,7 +11,16 @@ urlpatterns = [
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)
 
+# --------------------------------------------------------------------
+# #working class based api views, using mixins, Using generic class-based views
+# urlpatterns = [
+#
+#     path('articles/', views.ArticleList.as_view()),
+#     path('articles/<int:pk>/', views.ArticleDetail.as_view()),
+# ]
+# urlpatterns = format_suffix_patterns(urlpatterns)
 
+# --------------------------------------------------------------------
 # #working api_views() decorator on function based api views
 # urlpatterns = [
 #
@@ -20,7 +29,7 @@ urlpatterns = format_suffix_patterns(urlpatterns)
 # ]
 # urlpatterns = format_suffix_patterns(urlpatterns)
 
-
+# --------------------------------------------------------------------
 # #working function based api views
 # urlpatterns = [
 #
